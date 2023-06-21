@@ -1,0 +1,37 @@
+.contactBlock {
+    min-height: 100vh;
+    background-color: pink;
+}
+
+.contactContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 350px;
+}
+
+.title {
+    background-color: lightgrey;
+}
+
+.formContainer {
+    border: 1px solid;
+    background-color: bisque;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formContainer input {
+    margin-bottom: 5px;
+}
+
+.formContainer textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.btn {
+    height: 70px;
+    width: 140px;
+}

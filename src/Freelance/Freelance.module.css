@@ -1,0 +1,27 @@
+.freelanceBlock {
+    height: 40vh;
+    background-color: rgba(100, 149, 237, 0.55);
+}
+
+.freelanceContainer {
+    flex-direction: column;
+    height: 70%;
+}
+
+.text {
+
+}
+
+.btn{
+    width: 200px;
+    height: 70px;
+}
+/*.btn {  если кнопку нужно будет заменить на ссылку <a href=""></a> */
+/*    display: inline-block; !* Строчно-блочный элемент *!*/
+/*    background: #8C959D; !* Серый цвет фона *!*/
+/*    color: black; !* Черный цвет текста *!*/
+/*    padding: 1rem 1.5rem; !* Поля вокруг текста *!*/
+/*    text-decoration: none; !* Убираем подчёркивание *!*/
+/*    border-radius: 3px; !* Скругляем уголки *!*/
+/*    font-weight: bold;*/
+/*}*/

@@ -1,0 +1,28 @@
+.footerBlock {
+    min-height: 30vh;
+    background-color: lightcyan;
+}
+
+.footerContainer {
+    background-color: darkkhaki;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 25vh;
+}
+
+.title {
+    background-color: lightgrey;
+}
+
+.subscribeContainer {
+    border: 1px solid;
+    background-color: bisque;
+    width: 290px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    background-color: lightgrey;
+}
