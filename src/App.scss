@@ -1,0 +1,21 @@
+@import "./src/commom/styles/sass/variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+
+  h1, h2, h3, h4, h5, h6 {
+    font: 700 40px/1.2 $fontFamilyTitle;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+}
+
+
+
+

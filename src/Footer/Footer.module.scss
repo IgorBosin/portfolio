@@ -1,0 +1,32 @@
+@import "./src/commom/styles/sass/variables";
+@import "./src/commom/styles/sass/mixins";
+
+.footerBlock {
+  background-color: $backgroundColor;
+  height: 20vh;
+
+  .footerContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 30px;
+
+    .footerTitle {
+      letter-spacing: 3px;
+      color: $textColor;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .subscribeContainer {
+    }
+
+    .text {
+      color: $textColor;
+      @include text($textColor, $fontFamilyDescription, 400, 12px, 1.65)
+    }
+
+  }
+}

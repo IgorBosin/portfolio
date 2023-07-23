@@ -1,26 +1,24 @@
 import React from 'react';
-import style from './Contact.module.css';
-import styleContainer from './../commom/styles/Container.module.css'
-import buttonStyle from "../commom/styles/Button.module.css";
+import style from './Contact.module.scss';
+import styleContainer from './../commom/styles/Container.module.scss'
+import {Title} from "../commom/components/title/Title";
+import Input from "../commom/components/Input/Input";
+import ButtonComponent from "../commom/components/Button/ButtonComponent";
 
 
 export const Contact = () => {
     return (
-        <div className={style.contactBlock}>
+        <div id={'Contact'} className={style.contactBlock}>
             <div className={`${styleContainer.container} ${style.contactContainer} `}>
-                <h2 className={style.title}>Say Hello!</h2>
+                <Title icon={"lnr lnr-envelope"} title={'Contact Me'}/>
                 <form className={style.formContainer}>
-                    <input placeholder={'Name'} type="text"/>
-                    <input placeholder={'E-mail'} type="email"/>
-                    <textarea placeholder={'Your message'} name="text" id=""></textarea>
+                    <Input label={'E-mail'} type={"email"} maxRows={2} multiline={false}/>
+                    <Input label={'Name'} type={"text"} maxRows={2} multiline={false}/>
+                    <Input label={'Your message'} type={"text"} rows={4} maxRows={4} multiline={true}/>
+                    <ButtonComponent/>
                 </form>
-                <button
-                    onClick={() => window.location.href = 'https://google.com'}
-                    className={`${buttonStyle.btn} ${style.btn}`}>SEND MESSAGE
-                </button>
             </div>
         </div>
-
     );
 }
 

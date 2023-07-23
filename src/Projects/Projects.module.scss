@@ -1,0 +1,29 @@
+@import './src/commom/styles/sass/variables';
+
+.projectsBlock {
+  background-color: $backgroundColor;
+
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @media screen and (max-width: 629px) {
+      justify-content: center
+    }
+  }
+}
+
+@media screen and (max-width: 629px) {
+  /*макс-ный р-р экрана при котором к projects будет */
+  .projects { /*применяться стиль "center" равен 629px, если р-р будет больше - то space-between */
+    justify-content: center
+  }
+}

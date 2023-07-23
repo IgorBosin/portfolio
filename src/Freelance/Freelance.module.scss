@@ -1,15 +1,13 @@
+@import "./src/commom/styles/sass/variables";
+@import "./src/commom/styles/sass/mixins";
+
 .freelanceBlock {
-    height: 40vh;
-    background-color: rgba(100, 149, 237, 0.55);
+    background-color: $backgroundSecondaryColor;
 }
 
 .freelanceContainer {
-    flex-direction: column;
     height: 70%;
-}
-
-.text {
-
+    justify-content: center
 }
 
 .btn{

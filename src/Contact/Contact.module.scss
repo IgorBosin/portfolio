@@ -1,0 +1,33 @@
+@import "./src/commom/styles/sass/variables";
+@import "./src/commom/styles/sass/mixins";
+
+.contactBlock {
+  background-color: $backgroundSecondaryColor;
+  height: 80vh;
+
+  .contactContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 350px;
+//вопрос
+    &:nth-child(1) {
+      justify-content: space-evenly; //вопрос: как задать только 1 диву
+    }
+
+    &:first-child {
+      justify-content: flex-start;
+    }
+
+
+  }
+
+  .formContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+

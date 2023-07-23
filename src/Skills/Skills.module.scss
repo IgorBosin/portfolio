@@ -1,0 +1,19 @@
+@import "./src/commom/styles/sass/variables";
+@import "./src/commom/styles/sass/mixins";
+
+.skillsBlock {
+    min-height: 70vh;
+    background-color: $backgroundSecondaryColor
+}
+
+.skillsContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    //flex-wrap: wrap;
+}
