@@ -2,20 +2,18 @@
 @import "./src/commom/styles/sass/mixins";
 
 .contactBlock {
-  background-color: $backgroundSecondaryColor;
-  height: 80vh;
+  min-height: 80vh;
 
   .contactContainer {
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 350px;
-//вопрос
     &:nth-child(1) {
-      justify-content: space-evenly; //вопрос: как задать только 1 диву
+      justify-content: flex-start; //вопрос: как задать только 1 чайлду
     }
 
-    &:first-child {
-      justify-content: flex-start;
+    &:nth-child(2) {
+      justify-content: space-evenly;
     }
 
 

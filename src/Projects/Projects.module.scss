@@ -1,8 +1,6 @@
 @import './src/commom/styles/sass/variables';
 
 .projectsBlock {
-  background-color: $backgroundColor;
-
   .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;

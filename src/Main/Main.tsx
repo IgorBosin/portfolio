@@ -1,19 +1,30 @@
 import React from 'react';
-import style from './Main.module.css';
-import styleContainer from './../commom/styles/Container.module.scss'
+import style from './Main.module.scss'
+import bgImage from "../assets/images/sky2.jpg";
+import avaImage from "../assets/images/ava3.jpg";
+
 
 export const Main = () => {
+
+    const todo = {
+        backgroundImage: `url(${bgImage})`
+    }
+
+    const ava = {
+        backgroundImage: `url(${avaImage})`
+    }
+
     return (
-        <div id={'Main'} className={style.mainBlock}>
-            <div className={styleContainer.container}>
+        <div id={'Home'} style={todo} className={style.mainBlock}>
+            <div className={` ${style.container} `}>
+                <div style={ava} className={style.photo}></div>
+
                 <div className={style.greeting}>
-                    <span>Hi World</span>
-                    <h1>I am Igor</h1>
-                    <p>Frontend Developer</p>
+                    <h1>Igor <span>Bosin</span></h1>
+                    <p>I am a <span>Frontend Developer</span></p>
                 </div>
-                <div className={style.photo}></div>
             </div>
         </div>
-    );
+    )
 }
 

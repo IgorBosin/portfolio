@@ -16,17 +16,17 @@ export const Footer = () => {
     }
 
     return (
-        <div className={style.footerBlock}>
+        <div className={`${style.footerBlock} bg` }>
             <div className={`${styleContainer.container} ${style.footerContainer} `}>
                 {/*<h2 className={style.footerTitle}>Igor Bosin</h2>*/}
                 <div className={style.subscribeContainer}>
-                    <a href="https://www.vk.com" target="_blank" rel="author">
+                    <a href="https://www.vk.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faVk} style={styleIcon}/>
                     </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="author">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} style={styleIcon}/>
                     </a>
-                    <a href="https://www.whatsapp.com" target="_blank" rel="author">
+                    <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faWhatsapp} style={styleIcon}/>
                     </a>
                 </div>

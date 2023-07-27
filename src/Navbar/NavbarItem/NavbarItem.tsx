@@ -4,6 +4,8 @@ import style from './NavbarItem.module.scss';
 type NavbarItemType = {
     title: string
     icon: string
+    activeTab: string
+    setActiveTab: (title: string) => void
 }
 
 export const NavbarItem = (props: NavbarItemType) => {
@@ -13,10 +15,14 @@ export const NavbarItem = (props: NavbarItemType) => {
         if (element) {
             element.scrollIntoView({behavior: 'smooth'})
         }
+        props.setActiveTab(props.title)
+        console.log(props.title)
     }
 
     return (
-        <div className={style.link} onClick={() => onClickHandler(props.title)}>
+        <div
+            className={`${style.link} ${props.activeTab === props.title ? style.active : ``}`}
+            onClick={() => onClickHandler(props.title)}>
             <p>{props.title}</p>
             <i className={props.icon}></i>
         </div>

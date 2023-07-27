@@ -1,14 +1,25 @@
+@import "./src/commom/styles/sass/variables";
+@import "./src/commom/styles/sass/mixins";
+
 .link {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: 1px;
+  @include text(#777, $fontFamilyDescription, 400, 13px, 45px);
 
   & i {
     padding: 5px;
+    font-size: 16px;
   }
 
   & p {
     text-transform: uppercase;
+    margin: 0;
+  }
+
+  &.active {
+    color: white;
   }
 }

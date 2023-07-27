@@ -14,6 +14,14 @@
     padding: 0;
     color: #fff;
   }
+  .bg:nth-child(even) {
+    background-color:$backgroundColor
+  }
+  .bg:nth-child(odd) {
+    background-color:$backgroundSecondaryColor
+  }
+
+
 }
 
 

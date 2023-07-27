@@ -1,0 +1,67 @@
+@import "./src/commom/styles/sass/variables";
+@import "./src/commom/styles/sass/mixins";
+
+.mainBlock {
+  padding-top: 80px;
+  height: 100vh;
+  animation: gradient 70s ease infinite;
+  background-size: cover;
+  background-position: top;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  .container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .greeting {
+      & h1 {
+        @include text($textColor, $fontFamilyTitle, 500, 62px, 1.2);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @media screen and (max-width: 767px) {
+          font-size: 50px;
+        }
+
+        & span {
+          color: $textSecondaryColor;
+          font-weight: 900;
+        }
+      }
+
+      & p {
+        @include text($textColor, $fontFamilyDescription, 300, 28px, 1.2);
+        @media screen and (max-width: 767px) {
+          font-size: 22px;
+        }
+
+        & span {
+          text-decoration: 2px underline solid $textSecondaryColor;
+        }
+      }
+    }
+
+    .photo {
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+

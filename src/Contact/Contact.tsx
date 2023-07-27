@@ -8,7 +8,7 @@ import ButtonComponent from "../commom/components/Button/ButtonComponent";
 
 export const Contact = () => {
     return (
-        <div id={'Contact'} className={style.contactBlock}>
+        <div id={'Contact'} className={`${style.contactBlock} bg`}>
             <div className={`${styleContainer.container} ${style.contactContainer} `}>
                 <Title icon={"lnr lnr-envelope"} title={'Contact Me'}/>
                 <form className={style.formContainer}>

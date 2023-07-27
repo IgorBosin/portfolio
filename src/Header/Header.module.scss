@@ -1,9 +1,10 @@
 @import "./src/commom/styles/sass/variables";
 @import "./src/commom/styles/sass/mixins";
 
-.navbar {
-    border: 1px solid;
+.header {
     display: flex;
-    justify-content: space-evenly;
-    width: 400px;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
 }

@@ -10,6 +10,7 @@
   text-transform: capitalize;
   line-height: 1.2;
   position: relative;
+  padding: 0 10px;
 
   & i {
     font-size: 36px;
@@ -18,8 +19,9 @@
 
   &::before {
     content: '';
-    bottom: -20px;
     position: absolute;
+    left: 0;
+    bottom: -20px;
     //background: rgba(255, 255, 255, 0.2);
     border-bottom: 1px dashed rgba(255, 255, 255, 0.2);;
     width: 100%;
