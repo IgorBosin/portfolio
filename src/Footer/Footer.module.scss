@@ -2,13 +2,12 @@
 @import "./src/commom/styles/sass/mixins";
 
 .footerBlock {
-  height: 20vh;
 
   .footerContainer {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 30px;
+    padding: 16px;
 
     .footerTitle {
       letter-spacing: 3px;
@@ -24,7 +23,7 @@
 
     .text {
       color: $textColor;
-      @include text($textColor, $fontFamilyDescription, 400, 12px, 1.65)
+      @include text(#777, $fontFamilyDescription, 400, 12px, 1.65)
     }
 
   }

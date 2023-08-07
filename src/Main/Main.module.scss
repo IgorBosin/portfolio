@@ -2,11 +2,25 @@
 @import "./src/commom/styles/sass/mixins";
 
 .mainBlock {
+  background-color: $backgroundColor;
   padding-top: 80px;
   height: 100vh;
-  animation: gradient 70s ease infinite;
+  animation: gradient 100s ease infinite;
   background-size: cover;
-  background-position: top;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1021px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 767px) {
+    background-image: none !important;
+  }
 
   @keyframes gradient {
     0% {
@@ -20,48 +34,58 @@
     }
   }
 
-  .container {
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-
-    .greeting {
-      & h1 {
-        @include text($textColor, $fontFamilyTitle, 500, 62px, 1.2);
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        @media screen and (max-width: 767px) {
-          font-size: 50px;
-        }
-
-        & span {
-          color: $textSecondaryColor;
-          font-weight: 900;
-        }
-      }
-
-      & p {
-        @include text($textColor, $fontFamilyDescription, 300, 28px, 1.2);
-        @media screen and (max-width: 767px) {
-          font-size: 22px;
-        }
-
-        & span {
-          text-decoration: 2px underline solid $textSecondaryColor;
-        }
-      }
-    }
-
-    .photo {
+  .photoGeneral {
+    display: none;
+    @media screen and (max-width: 1021px) {
+      display: block;
       background-size: cover;
+      background-position: top;
       width: 300px;
       height: 300px;
     }
   }
+
+  .greeting {
+    & h1 {
+      @include text($textColor, $fontFamilyTitle, 500, 62px, 1.2);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        font-size: 50px;
+      }
+
+      & span {
+        color: $textSecondaryColor;
+        font-weight: 900;
+      }
+    }
+
+    & p {
+      @include text($textColor, $fontFamilyDescription, 300, 28px, 1.2);
+      @media screen and (max-width: 767px) {
+        font-size: 22px;
+      }
+
+      & span {
+        text-decoration: 2px underline solid $textSecondaryColor;
+      }
+    }
+  }
+
+  .photo {
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    @media screen and (max-width: 1268px) {
+      width: 200px;
+      height: 300px;
+    }
+    @media screen and (max-width: 1021px) {
+      display: none;
+    }
+  }
+
 }
 
 
