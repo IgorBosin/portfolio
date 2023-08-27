@@ -15,20 +15,28 @@ export const Footer = () => {
         color: '#777',
     }
 
+    const links = [
+        {
+            href: "https://www.vk.com",
+            icon: faVk,
+        },
+        {
+            href: "https://www.linkedin.com",
+            icon: faLinkedin,
+        },
+        {
+            href: "https://www.whatsapp.com",
+            icon: faWhatsapp,
+        },
+    ]
+
     return (
-        <div className={`${style.footerBlock} bg` }>
+        <div className={`${style.footerBlock} bg`}>
             <div className={`${styleContainer.container} ${style.footerContainer} `}>
-                {/*<h2 className={style.footerTitle}>Igor Bosin</h2>*/}
                 <div className={style.subscribeContainer}>
-                    <a href="https://www.vk.com" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faVk} style={styleIcon}/>
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin} style={styleIcon}/>
-                    </a>
-                    <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faWhatsapp} style={styleIcon}/>
-                    </a>
+                    {links.map(el => <a href={el.href} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={el.icon} style={styleIcon}/> </a>
+                    )}
                 </div>
                 <p className={style.text}>Ⓒ 2023 All Rights Reserved</p>
             </div>

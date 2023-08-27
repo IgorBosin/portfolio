@@ -8,15 +8,14 @@
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 350px;
+
     &:nth-child(1) {
-      justify-content: flex-start; //вопрос: как задать только 1 чайлду
+      justify-content: flex-start;
     }
 
     &:nth-child(2) {
       justify-content: space-evenly;
     }
-
-
   }
 
   .formContainer {

@@ -7,7 +7,7 @@ type InputType = {
     type: string
     rows?: number
     maxRows: number
-    multiline:boolean
+    multiline: boolean
 }
 
 const theme = createTheme({

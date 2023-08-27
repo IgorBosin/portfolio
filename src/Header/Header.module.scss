@@ -2,10 +2,10 @@
 @import "./src/commom/styles/sass/mixins";
 
 .header {
-    border-bottom: 2px #777 solid;
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
+  border-bottom: 2px #777 solid;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed !important;
+  z-index: 99;
+  width: 100%;
 }

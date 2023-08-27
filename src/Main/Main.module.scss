@@ -1,40 +1,42 @@
 @import "./src/commom/styles/sass/variables";
 @import "./src/commom/styles/sass/mixins";
 
+
 .mainBlock {
-  background-color: $backgroundColor;
   padding-top: 80px;
   height: 100vh;
-  animation: gradient 100s ease infinite;
-  background-size: cover;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  align-content: flex-end;
+  align-content: space-around;
   flex-wrap: wrap;
   @media screen and (max-width: 1021px) {
     flex-wrap: nowrap;
     flex-direction: column;
   }
-  @media screen and (max-width: 767px) {
-    background-image: none !important;
-  }
+  //background-color: $backgroundColor;
+  //animation: gradient 100s ease infinite;
+  //background-size: cover;
+  //@media screen and (max-width: 767px) {
+  //  background-image: none !important;
+  //}
 
-  @keyframes gradient {
-    0% {
-      background-position: 0 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
-  }
+  //@keyframes gradient {
+  //  0% {
+  //    background-position: 0 50%;
+  //  }
+  //  50% {
+  //    background-position: 100% 50%;
+  //  }
+  //  100% {
+  //    background-position: 0 50%;
+  //  }
+  //}
 
   .photoGeneral {
+    z-index: 1;
     display: none;
     @media screen and (max-width: 1021px) {
       display: block;
@@ -46,6 +48,8 @@
   }
 
   .greeting {
+    text-align: start;
+
     & h1 {
       @include text($textColor, $fontFamilyTitle, 500, 62px, 1.2);
       letter-spacing: 2px;
@@ -73,6 +77,7 @@
   }
 
   .photo {
+    z-index: 1;
     background-size: cover;
     background-position: center;
     width: 300px;
@@ -85,7 +90,6 @@
       display: none;
     }
   }
-
 }
 
 

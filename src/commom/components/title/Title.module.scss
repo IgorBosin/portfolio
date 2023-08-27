@@ -22,7 +22,6 @@
     position: absolute;
     left: 0;
     bottom: -20px;
-    //background: rgba(255, 255, 255, 0.2);
     border-bottom: 1px dashed rgba(255, 255, 255, 0.2);;
     width: 100%;
   }
@@ -31,6 +30,5 @@
     @include text($textSecondaryColor, $fontFamilyTitle, 700, 36px, 1em);
     letter-spacing: 1.5px;
   }
-
 }
 

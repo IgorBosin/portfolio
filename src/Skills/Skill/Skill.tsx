@@ -4,7 +4,7 @@ import style from './Skill.module.scss';
 type SkillsType = {
     title: string
     description: string
-    icon:string
+    icon: string
 }
 
 export const Skill = (props: SkillsType) => {

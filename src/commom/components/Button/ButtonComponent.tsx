@@ -14,7 +14,7 @@ const ButtonComponent = () => {
     return (
         <ThemeProvider theme={theme}>
             <div>
-                <Button variant="outlined" endIcon={<SendIcon />}>Send message</Button>
+                <Button variant="outlined" endIcon={<SendIcon/>}>Send message</Button>
             </div>
         </ThemeProvider>
 

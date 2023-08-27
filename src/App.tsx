@@ -8,20 +8,11 @@ import {Contact} from "./Contact/Contact";
 import {Footer} from "./Footer/Footer";
 import {BrowserRouter} from "react-router-dom";
 
-
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
                 <Header/>
-
-                {/*<Routes>*/}
-                {/*    <Route path='/Skills' element={<Skills/>}/>*/}
-                {/*    <Route path='/Projects' element={<Projects/>}/>*/}
-                {/*    <Route path='/Contact' element={<Contact/>}/>*/}
-                {/*    <Route path='/' element={''}/>*/}
-                {/*</Routes>*/}
-
                 <Main/>
                 <Skills/>
                 <Projects/>

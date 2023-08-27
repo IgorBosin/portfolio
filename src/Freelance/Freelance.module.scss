@@ -2,24 +2,14 @@
 @import "./src/commom/styles/sass/mixins";
 
 .freelanceBlock {
-  //  background-color: $backgroundSecondaryColor;
 }
 
 .freelanceContainer {
-    height: 70%;
-    justify-content: center
+  height: 70%;
+  justify-content: center
 }
 
-.btn{
-    width: 200px;
-    height: 70px;
+.btn {
+  width: 200px;
+  height: 70px;
 }
-/*.btn {  если кнопку нужно будет заменить на ссылку <a href=""></a> */
-/*    display: inline-block; !* Строчно-блочный элемент *!*/
-/*    background: #8C959D; !* Серый цвет фона *!*/
-/*    color: black; !* Черный цвет текста *!*/
-/*    padding: 1rem 1.5rem; !* Поля вокруг текста *!*/
-/*    text-decoration: none; !* Убираем подчёркивание *!*/
-/*    border-radius: 3px; !* Скругляем уголки *!*/
-/*    font-weight: bold;*/
-/*}*/

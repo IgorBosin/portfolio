@@ -20,7 +20,6 @@ export const Project = (props: ProjectType) => {
                     <h2 className={style.imgTextContainerTitle}>Show</h2>
                     <div className={style.imgTextContainerDescription}>GitHub-pages</div>
                 </div>
-                {/*<a className={style.btn}>Click me</a>*/}
             </div>
             <div className={style.projectText}>
                 <h3 className={style.projectTitle}> {props.title}</h3>
