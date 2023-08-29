@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Project.module.scss';
+import PulseClick from "../../commom/components/PulseClick/PulseClick";
 
 type ProjectType = {
     title: string
@@ -10,11 +11,12 @@ type ProjectType = {
 export const Project = (props: ProjectType) => {
 
     const onClickHandler = () => {
-        window.open('https://www.google.com', '_blank')
+        window.open('https://www.google.com', '_blank' )
     }
 
     return (
         <div className={style.project}>
+            <PulseClick className={style.waveContainer}/>
             <div className={style.img} style={props.backgroundStyle} onClick={onClickHandler}>
                 <div className={style.imgTextContainer}>
                     <h2 className={style.imgTextContainerTitle}>Show</h2>

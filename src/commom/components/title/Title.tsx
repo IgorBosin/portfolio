@@ -10,7 +10,7 @@ type TitleType = {
 export const Title = (props: TitleType) => {
     return (
         <div className={style.title}>
-            <Zoom style={{display: 'inline-flex'}} direction={"right"}>
+            <Zoom style={{display: 'inline-flex'}} >
                 <h2>{props.title}</h2>
             </Zoom>
             <i className={props.icon}></i>

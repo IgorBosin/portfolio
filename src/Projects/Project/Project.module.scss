@@ -12,6 +12,16 @@
     margin: 15px 8px;
   }
 
+  .waveContainer {
+    position: absolute;
+    top: 108px;
+    left: 108px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    z-index: 0;
+  }
+
   .img {
     background-size: cover;
     background-position: center;
@@ -24,11 +34,13 @@
       &:before {
         box-shadow: none;
         cursor: pointer;
+        //display: none;
       }
     }
 
     &:before {
       content: '';
+      color:$textColor;
       position: absolute;
       top: 0;
       bottom: 0;

@@ -31,7 +31,7 @@ export const Skills = () => {
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title icon={'lnr lnr-license'} title={'Skills'}/>
                 <div className={style.skills}>
-                    <Fade cascade damping={0.5} direction={'right'}>
+                    <Fade cascade damping={0.3} direction={'right'}>
                         {skills.map(el => <Skill title={el.title} description={lorem} icon={el.icon}/>)}
                     </Fade>
                 </div>

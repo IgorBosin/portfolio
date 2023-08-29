@@ -48,7 +48,7 @@
   }
 
   .greeting {
-    text-align: start;
+    text-align: end;
 
     & h1 {
       @include text($textColor, $fontFamilyTitle, 500, 62px, 1.2);

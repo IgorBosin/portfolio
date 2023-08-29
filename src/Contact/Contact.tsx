@@ -4,6 +4,7 @@ import styleContainer from './../commom/styles/Container.module.scss'
 import {Title} from "../commom/components/title/Title";
 import Input from "../commom/components/Input/Input";
 import ButtonComponent from "../commom/components/Button/ButtonComponent";
+import SendIcon from '@mui/icons-material/Send';
 
 
 export const Contact = () => {
@@ -38,7 +39,7 @@ export const Contact = () => {
                                              type={el.type}
                                              maxRows={el.maxRows}
                                              multiline={el.multiline}/>)}
-                    <ButtonComponent/>
+                    <ButtonComponent text={'Send message'} icon={<SendIcon/>}/>
                 </form>
             </div>
         </div>

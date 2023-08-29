@@ -1,6 +1,5 @@
 import React from 'react';
 import {Button, createTheme, ThemeProvider} from "@mui/material";
-import SendIcon from '@mui/icons-material/Send';
 
 const theme = createTheme({
     palette: {
@@ -10,11 +9,17 @@ const theme = createTheme({
     },
 });
 
-const ButtonComponent = () => {
+type propsType = {
+    text: string
+    icon: any
+
+}
+
+const ButtonComponent = ({text, icon, className}: { text: string, icon?: any, className?:string }) => {
     return (
         <ThemeProvider theme={theme}>
-            <div>
-                <Button variant="outlined" endIcon={<SendIcon/>}>Send message</Button>
+            <div className={className}>
+                <Button variant="outlined" endIcon={icon}>{text}</Button>
             </div>
         </ThemeProvider>
 

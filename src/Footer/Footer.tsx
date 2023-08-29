@@ -35,14 +35,14 @@ export const Footer = () => {
             <div className={`${styleContainer.container} ${style.footerContainer} `}>
                 <div className={style.subscribeContainer}>
                     {links.map(el => <a href={el.href} target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={el.icon} style={styleIcon}/> </a>
+                        <FontAwesomeIcon icon={el.icon} className={style.icon} /> </a>
                     )}
                 </div>
                 <p className={style.text}>Ⓒ 2023 All Rights Reserved</p>
             </div>
         </div>
-
     );
 }
 
 
+ // className="svg-inline--fa fa-linkedin

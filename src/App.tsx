@@ -7,6 +7,7 @@ import {Projects} from "./Projects/Projects";
 import {Contact} from "./Contact/Contact";
 import {Footer} from "./Footer/Footer";
 import {BrowserRouter} from "react-router-dom";
+import ReactTyped from "react-typed";
 
 function App() {
     return (
@@ -20,8 +21,8 @@ function App() {
                 <Footer/>
             </div>
         </BrowserRouter>
-
     );
 }
 
 export default App;
+
