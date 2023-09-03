@@ -15,7 +15,7 @@
     }
   }
 
-  .text {
+  .copyright {
     @include text($textSecondaryColor, $fontFamilyDescription, 400, 12px, 1.65)
   }
 }

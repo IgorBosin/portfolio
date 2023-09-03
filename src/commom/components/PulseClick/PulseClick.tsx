@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './PulseClick.module.scss'
 
-const PulseClick = ({className}:{className:string}) => {
+const PulseClick = () => {
     return (
-        <div className={className}>
+        <div className={style.waveContainer}>
             <span className={style.wave}></span>
             <span className={style.wave}></span>
             <span className={style.wave}></span>

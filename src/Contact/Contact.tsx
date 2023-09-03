@@ -10,18 +10,21 @@ export const Contact = () => {
 
     const inputs = [
         {
+            id: 1,
             label: 'E-mail',
             type: "email",
             maxRows: 2,
             multiline: false,
         },
         {
+            id: 2,
             label: 'Name',
             type: "text",
             maxRows: 2,
             multiline: false,
         },
         {
+            id: 3,
             label: 'Your message',
             type: "text",
             maxRows: 6,
@@ -30,11 +33,11 @@ export const Contact = () => {
     ]
 
     return (
-        <div id={'Contact'} className={`${style.contactBlock} bg`}>
+        <div id={'Contact'} className={style.contactBlock}>
             <div className={style.contactContainer}>
                 <Title icon={"lnr lnr-envelope"} title={'Contact Me'}/>
                 <form className={style.formContainer}>
-                    {inputs.map(el => <Input label={el.label}
+                    {inputs.map(el => <Input key={el.id} label={el.label}
                                              type={el.type}
                                              rows={6}
                                              maxRows={el.maxRows}

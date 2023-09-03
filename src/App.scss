@@ -15,15 +15,15 @@
     color: $textColor;
   }
 
-  .bg:nth-child(even) {
-    background-color: $backgroundColor;
+  > div {
+    &:nth-child(even) {
+      background-color: $backgroundColor;
+    }
+
+    &:nth-child(odd) {
+      background-color: $backgroundSecondaryColor;
+    }
   }
-
-  .bg:nth-child(odd) {
-    background-color: $backgroundSecondaryColor;
-  }
-
-
 }
 
 

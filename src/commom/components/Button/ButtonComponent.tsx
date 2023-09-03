@@ -19,7 +19,7 @@ const ButtonComponent = ({text, icon, className}: propsType) => {
     return (
         <ThemeProvider theme={theme}>
             <div className={className}>
-                <Button variant="outlined" endIcon={icon}>{text}</Button>
+                <Button type={'submit'} variant="outlined" endIcon={icon}>{text}</Button>
             </div>
         </ThemeProvider>
     );

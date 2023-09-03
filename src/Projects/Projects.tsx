@@ -7,39 +7,36 @@ import todoImage from '../assets/images/ToDoList.jpg'
 
 export const Projects = () => {
 
-    const social = {
-        backgroundImage: `url(${socialImage})`
+    const backgroundImages = {
+        social: {backgroundImage: `url(${socialImage})`},
+        todo: {backgroundImage: `url(${todoImage})`}
     }
-    const todo = {
-        backgroundImage: `url(${todoImage})`
-    }
+
 
     const projects = [
         {
-            backgroundStyle: todo,
+            id: 1,
+            backgroundStyle: backgroundImages.todo,
             title: 'To-do list',
             description: 'Create Todo List'
         },
         {
-            backgroundStyle: social,
+            id: 2,
+            backgroundStyle: backgroundImages.social,
             title: 'Social network',
-            description: 'we',
-            //     description: 'Create Social Network Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex' +
-            //         ' excepturi impedit ipsum laudantium porro qui saepe suscipit tenetur voluptatibus! Aut dolores enim ' +
-            //         'esse facilis magnam nulla, quia quod recusandae.\n        Lorem ipsum dolor sit amet, consectetur ' +
-            //         'adipisicing elit. Blanditiis ex excepturi impedit ipsum laudantium porro qui saepe suscipit tenetur ' +
-            //         'voluptatibus! Aut dolores enim esse facilis magnam nulla, quia quod recusandae.'
+            description: 'Create Social network',
         }
     ]
 
     return (
-        <div id={'Projects'} className={`${style.projectsBlock} bg`}>
+        <div id={'Projects'} className={style.projectsBlock}>
             <div className={style.projectsContainer}>
                 <Title icon={'lnr lnr-briefcase'} title={'My projects'}/>
                 <div className={style.projects}>
-                    {projects.map(el =>
-                        <Project title={el.title} description={el.description}
-                                 backgroundStyle={el.backgroundStyle}/>)}
+                    {projects.map(el => <Project key={el.id}
+                                                 title={el.title}
+                                                 description={el.description}
+                                                 backgroundStyle={el.backgroundStyle}/>)}
                 </div>
             </div>
         </div>

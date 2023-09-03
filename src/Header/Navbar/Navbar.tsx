@@ -7,18 +7,22 @@ export const Navbar = () => {
 
     const navBar = [
         {
+            id:1,
             title: 'Home',
             icon: 'lnr lnr-home'
         },
         {
+            id:2,
             title: 'Skills',
             icon: 'lnr lnr-license'
         },
         {
+            id:3,
             title: 'Projects',
             icon: 'lnr lnr-briefcase'
         },
         {
+            id:4,
             title: 'Contact',
             icon: 'lnr lnr-envelope'
         },
@@ -26,7 +30,7 @@ export const Navbar = () => {
 
     return (
         <div className={style.navbar}>
-            {navBar.map(el => <NavbarItem
+            {navBar.map(el => <NavbarItem key={el.id}
                 title={el.title}
                 icon={el.icon}
                 activeTab={activeTab}

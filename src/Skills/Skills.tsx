@@ -12,26 +12,29 @@ export const Skills = () => {
 
     const skills = [
         {
+            id: 1,
             icon: 'lnr lnr-earth',
             title: 'JS',
         },
         {
+            id: 2,
             icon: 'lnr lnr-text-size',
             title: 'CSS',
         },
         {
+            id: 3,
             icon: 'lnr lnr-diamond',
             title: 'React',
         },
     ]
 
     return (
-        <div id={'Skills'} className={`${style.skillsBlock} bg`}>
+        <div id={'Skills'} className={style.skillsBlock}>
             <div className={style.skillsContainer}>
                 <Title icon={'lnr lnr-license'} title={'Skills'}/>
                 <div className={style.skills}>
-                    <Fade cascade damping={0.3} direction={'right'}>
-                        {skills.map(el => <Skill title={el.title} description={lorem} icon={el.icon}/>)}
+                    <Fade cascade damping={0.2} direction={'right'}>
+                        {skills.map(el => <Skill key={el.id} title={el.title} description={lorem} icon={el.icon}/>)}
                     </Fade>
                 </div>
             </div>

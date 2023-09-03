@@ -1,17 +1,17 @@
 import React, {useCallback} from 'react';
 import Particles from "react-tsparticles";
 import type {Container, Engine} from "tsparticles-engine";
-import {loadSlim} from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import {loadSlim} from "tsparticles-slim";
 import style from './Particle.module.css'
 
 const Particle = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
-        console.log(engine);
+        // console.log(engine);
         await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
+        // await console.log(container);
     }, []);
 
     return (
@@ -66,7 +66,7 @@ const Particle = () => {
                                    color: "#ffffff",
                                    distance: 150,
                                    enable: true,
-                                   opacity: 0.5,
+                                   opacity: 0.2,
                                    width: 1,
                                },
                                move: {
@@ -87,7 +87,7 @@ const Particle = () => {
                                    value: 80,
                                },
                                opacity: {
-                                   value: 0.5,
+                                   value: 0.2,
                                },
                                shape: {
                                    type: "circle",

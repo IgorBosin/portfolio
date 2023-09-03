@@ -12,35 +12,22 @@
     margin: 15px 8px;
   }
 
-  .waveContainer {
-    position: absolute;
-    top: 108px;
-    left: 108px;
-    overflow: hidden;
-    width: 80px;
-    height: 80px;
-    z-index: 0;
-  }
-
   .img {
     background-size: cover;
     background-position: center;
     height: 295px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center, nowrap);
 
     &:hover { // при наведении на img изменяем поведение созданное в &:before
       &:before {
         box-shadow: none;
         cursor: pointer;
-        //display: none;
       }
     }
 
     &:before {
       content: '';
-      color:$textColor;
+      color: $textColor;
       position: absolute;
       top: 0;
       bottom: 0;

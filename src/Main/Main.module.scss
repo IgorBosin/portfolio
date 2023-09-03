@@ -1,39 +1,15 @@
 @import "./src/commom/styles/sass/variables";
 @import "./src/commom/styles/sass/mixins";
 
-
 .mainBlock {
+  @include flex(row-reverse,center, center, nowrap );
   padding-top: 80px;
   height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
-  align-content: space-around;
-  flex-wrap: wrap;
+
   @media screen and (max-width: 1021px) {
     flex-wrap: nowrap;
     flex-direction: column;
   }
-  //background-color: $backgroundColor;
-  //animation: gradient 100s ease infinite;
-  //background-size: cover;
-  //@media screen and (max-width: 767px) {
-  //  background-image: none !important;
-  //}
-
-  //@keyframes gradient {
-  //  0% {
-  //    background-position: 0 50%;
-  //  }
-  //  50% {
-  //    background-position: 100% 50%;
-  //  }
-  //  100% {
-  //    background-position: 0 50%;
-  //  }
-  //}
 
   .photoGeneral {
     z-index: 1;
