@@ -1,18 +1,19 @@
 @import './src/commom/styles/sass/variables';
+@import "./src/commom/styles/sass/mixins";
 
 .projectsBlock {
+  min-height: 90vh;
+
+
   .projectsContainer {
+    @include container();
     flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
   }
 
   .projects {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    @include flex(row, space-evenly, center, wrap);
+
     @media screen and (max-width: 629px) {
       justify-content: center
     }
@@ -20,8 +21,7 @@
 }
 
 @media screen and (max-width: 629px) {
-  /*макс-ный р-р экрана при котором к projects будет */
-  .projects { /*применяться стиль "center" равен 629px, если р-р будет больше - то space-between */
+  .projects {
     justify-content: center
   }
 }

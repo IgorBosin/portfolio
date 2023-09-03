@@ -21,7 +21,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     width: `100%`,
-                    marginBottom: '16px'
+                    marginBottom: '16px',
                 },
             },
         },
@@ -31,6 +31,7 @@ const theme = createTheme({
                     width: `100%`,
                     '& fieldset': {
                         border: '2px solid #999',
+
                         // color: '#e1e1e1'
                     },
                 },
@@ -61,7 +62,6 @@ const Input = (props: InputType) => {
                     inputProps={{
                         style: {
                             color: "#fff",
-                            width: "100%",
                         }
                     }}
                 />

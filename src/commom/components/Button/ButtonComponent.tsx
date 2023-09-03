@@ -11,18 +11,17 @@ const theme = createTheme({
 
 type propsType = {
     text: string
-    icon: any
-
+    icon?: any
+    className?: string
 }
 
-const ButtonComponent = ({text, icon, className}: { text: string, icon?: any, className?:string }) => {
+const ButtonComponent = ({text, icon, className}: propsType) => {
     return (
         <ThemeProvider theme={theme}>
             <div className={className}>
                 <Button variant="outlined" endIcon={icon}>{text}</Button>
             </div>
         </ThemeProvider>
-
     );
 };
 

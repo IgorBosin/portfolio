@@ -2,26 +2,17 @@
 @import "./src/commom/styles/sass/mixins";
 
 .contactBlock {
-  min-height: 80vh;
+  min-height: 75vh;
 
   .contactContainer {
+    @include container();
     flex-direction: column;
-    flex-wrap: nowrap;
-    min-height: 350px;
-
-    &:nth-child(1) {
-      justify-content: flex-start;
-    }
-
-    &:nth-child(2) {
-      justify-content: space-evenly;
-    }
   }
 
   .formContainer {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
+    padding: 0 5px;
+    width: 100%;
+    max-width: 500px;
   }
 }
 

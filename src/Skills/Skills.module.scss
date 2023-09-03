@@ -2,10 +2,11 @@
 @import "./src/commom/styles/sass/mixins";
 
 .skillsBlock {
-  min-height: 70vh;
+  min-height: 90vh;
 }
 
 .skillsContainer {
+  @include container();
   flex-direction: column;
   flex-wrap: nowrap;
 }

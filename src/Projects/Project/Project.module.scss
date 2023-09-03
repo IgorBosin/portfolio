@@ -101,7 +101,7 @@
     z-index: 10;
 
     .projectTitle {
-      @include text($textSecondaryColor, $fontFamilyTitle, 500, 21px, 1.2);
+      @include text($primaryColor, $fontFamilyTitle, 500, 21px, 1.2);
       letter-spacing: 0.5px;
       margin-bottom: 15px;
       padding: 0;

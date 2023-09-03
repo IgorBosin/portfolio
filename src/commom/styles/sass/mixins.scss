@@ -1,20 +1,29 @@
-@import './variables';
-
-@mixin text(
-  $textColor,
-  $fontFamily:$fontFamilyTitle,
-  $fontWeight:300,
-  $fontSize:36px,
-  $lineHeight: 1.2,
-) {
+@mixin text($textColor, $fontFamily,  $fontWeight,  $fontSize,  $lineHeight) {
   color: $textColor;
   font-family: $fontFamily;
   font-weight: $fontWeight;
   font-size: $fontSize;
   line-height: $lineHeight;
-  @media screen and (max-width: 480px) {
-  }
 }
 
+@mixin flex($direction,$justifyContent,$alignItems ,$wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap:  $wrap;
+}
 
+@mixin container() {
+  padding: 100px 0;
+  border: 1px solid;
+  height: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  @include flex(row, space-between, center, wrap);
+
+  @media (max-width: 767px) {
+    padding: 80px 0;
+  }
+}
 

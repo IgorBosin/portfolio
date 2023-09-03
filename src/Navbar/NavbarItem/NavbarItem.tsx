@@ -20,9 +20,8 @@ export const NavbarItem = (props: NavbarItemType) => {
     }
 
     return (
-        <div
-            className={`${style.link} ${props.activeTab === props.title ? style.active : ``}`}
-            onClick={() => onClickHandler(props.title)}>
+        <div className={`${style.link} ${props.activeTab === props.title ? style.active : ''}`}
+             onClick={() => onClickHandler(props.title)}>
             <p>{props.title}</p>
             <i className={props.icon}></i>
         </div>

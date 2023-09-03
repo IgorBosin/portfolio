@@ -59,7 +59,7 @@
       }
 
       & span {
-        color: $textSecondaryColor;
+        color: $primaryColor;
         font-weight: 900;
       }
     }
@@ -71,7 +71,7 @@
       }
 
       & span {
-        text-decoration: 2px underline solid $textSecondaryColor;
+        text-decoration: 2px underline solid $primaryColor;
       }
     }
   }

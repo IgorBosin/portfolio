@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Projects.module.scss';
-import styleContainer from './../commom/styles/Container.module.scss'
 import {Project} from './Project/Project';
 import {Title} from "../commom/components/title/Title";
 import socialImage from '../assets/images/socialNetwork.jpg'
@@ -24,18 +23,18 @@ export const Projects = () => {
         {
             backgroundStyle: social,
             title: 'Social network',
-            // description: 'we',
-            description: 'Create Social Network Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex' +
-                ' excepturi impedit ipsum laudantium porro qui saepe suscipit tenetur voluptatibus! Aut dolores enim ' +
-                'esse facilis magnam nulla, quia quod recusandae.\n        Lorem ipsum dolor sit amet, consectetur ' +
-                'adipisicing elit. Blanditiis ex excepturi impedit ipsum laudantium porro qui saepe suscipit tenetur ' +
-                'voluptatibus! Aut dolores enim esse facilis magnam nulla, quia quod recusandae.'
+            description: 'we',
+            //     description: 'Create Social Network Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex' +
+            //         ' excepturi impedit ipsum laudantium porro qui saepe suscipit tenetur voluptatibus! Aut dolores enim ' +
+            //         'esse facilis magnam nulla, quia quod recusandae.\n        Lorem ipsum dolor sit amet, consectetur ' +
+            //         'adipisicing elit. Blanditiis ex excepturi impedit ipsum laudantium porro qui saepe suscipit tenetur ' +
+            //         'voluptatibus! Aut dolores enim esse facilis magnam nulla, quia quod recusandae.'
         }
     ]
 
     return (
         <div id={'Projects'} className={`${style.projectsBlock} bg`}>
-            <div className={`${styleContainer.container} ${style.projectsContainer} `}>
+            <div className={style.projectsContainer}>
                 <Title icon={'lnr lnr-briefcase'} title={'My projects'}/>
                 <div className={style.projects}>
                     {projects.map(el =>

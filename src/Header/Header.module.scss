@@ -2,7 +2,7 @@
 @import "./src/commom/styles/sass/mixins";
 
 .header {
-  border-bottom: 2px #777 solid;
+  border-bottom: 2px $textSecondaryColor solid;
   display: flex;
   justify-content: flex-end;
   position: fixed !important;

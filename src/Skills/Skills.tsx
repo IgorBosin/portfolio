@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import styleContainer from './../commom/styles/Container.module.scss'
 import {Skill} from "./Skill/Skill";
 import {Title} from "../commom/components/title/Title";
 import {Fade} from "react-awesome-reveal";
@@ -28,7 +27,7 @@ export const Skills = () => {
 
     return (
         <div id={'Skills'} className={`${style.skillsBlock} bg`}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+            <div className={style.skillsContainer}>
                 <Title icon={'lnr lnr-license'} title={'Skills'}/>
                 <div className={style.skills}>
                     <Fade cascade damping={0.3} direction={'right'}>
